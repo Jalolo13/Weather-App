@@ -25,9 +25,9 @@ body {
 .container-fluid {
   width: 600px;
   min-height: 100%;
-  background: #fff;
+  background: #daedff;
   border-radius: 10px;
-  opacity: .95;
+  opacity: .98;
 }
 
 .main {
@@ -104,7 +104,7 @@ body {
 }
 
 #cityoutput {
-  color: #000;
+  color: #fff;
   font-size: 30px;
 }
 
@@ -133,7 +133,8 @@ body {
 }
 
 .wrapper-display {
-  background-color: #f0f0f0;
+  background-color: #00053f;
+  opacity: 1;
   min-height: 100px;
   width: 80%;
   padding: 15px;
@@ -143,6 +144,24 @@ body {
 
 .wrapper-display p {
   font-size: 20px;
+}
+
+#temp {
+  font-size: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.icon {
+  width: 40px;
+  height: 40px;
 }
 
 @media screen and (max-width: 768px) {
