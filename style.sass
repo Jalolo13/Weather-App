@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Anek+Tamil:wght@300;400;500;600;700&display=swap')
+    
+body
+    width: 100vw
+    height: 100vh
+    margin: 0
+    padding: 0
+
+.wrapper
+    font-family: 'Anek Tamil', sans-serif
+    background: url('./828334390.jpg') center center no-repeat
+    background-size: cover
+    display: flex
+    min-height: 100%
+    align-items: center
+    justify-content: center
+
+.container-fluid
+    width: 600px
+    min-height: 100%
+    background: #fff
+    border-radius: 10px
+    opacity: .95
+
+.main
+    display: flex
+    align-items: center
+    justify-content: center
+    flex-direction: column
+    flex: 1 0 60%
+    padding: 30px
+    min-height: 100%
+
+.title
+    font-size: 36px
+
+.inputs
+    
+    padding: 20px
+    width: 70%
+    display: flex
+    justify-content: space-between
+
+#add
+    background: #161515
+    border: none
+    border-radius: 50%
+    width: 50px
+    display: flex
+    align-items: center
+    justify-content: center
+    cursor: pointer
+    height: 50px
+    transition: .2s
+    &:hover
+        background: #363333
+
+#cityinput
+    border-radius: 24px
+    padding: 15px
+    border: none
+    max-height: 30px
+    background: lightgray
+    width: 70%
+    font-size: 16px
+    font-family: 'Anek Tamil', sans-serif
+    font-weight: 600
+    margin-right: 20px
+
+#cityoutput
+    color: #000
+    font-size: 30px
+
+#time
+    font-size: 30px
+
+.display
+    text-align: center
+    width: 100%
+    color: #16a864
+    display: flex
+    justify-content: center
+    align-items: center
+    display: none
+
+.display.active
+    display: block
+
+.wrapper-display
+    background-color: #f0f0f0
+    min-height: 100px
+    width: 80%
+    padding: 15px
+    margin: 50px auto
+    border-radius: 20px
+    p
+        font-size: 20px
+
+@media screen and (max-width: 768px)
+    .container-fluid
+        margin: 0 50px
+
+    #cityinput
+        margin-right: 20px
+
+    .wrapper-display
+        width: 70%
+
+@media screen and (max-width: 426px)
+    .container-fluid
+        margin: 20px
+
+    .wrapper-display
+        margin-top: 0
+        width: 80%
+
+    .title
+        font-size: 30px
+
+    .inputs
+        flex-direction: column
+        align-items: center
+
+    #cityinput
+        margin-right: 0
+        margin-bottom: 15px
+        width: 100%
+        
